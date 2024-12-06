@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "npx @biomejs/biome check --write ./src"
+    "lint": "npx @biomejs/biome check --write ./src",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "commit": "git add . && git commit",
+    "prepare": "husky"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -26,7 +30,9 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "cypress": "^13.16.1",
     "globals": "^15.12.0",
+    "husky": "^9.1.7",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
     "typescript": "~5.6.2",
