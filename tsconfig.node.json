@@ -1,24 +1,44 @@
 {
-	"compilerOptions": {
-		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-		"target": "ES2022",
-		"lib": ["ES2023"],
-		"module": "ESNext",
-		"skipLibCheck": true,
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
 
-		/* Bundler mode */
-		"moduleResolution": "bundler",
-		"allowImportingTsExtensions": true,
-		"isolatedModules": true,
-		"moduleDetection": "force",
-		"noEmit": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
 
-		/* Linting */
-		"strict": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
-	},
-	"include": ["vite.config.ts"]
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* Path alias */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@entities": ["./src/models/entities/index"],
+      "@errors": ["./src/models/errors/index"],
+      "@factories": ["./src/models/factories/index"],
+      "@interfaces": ["./src/models/interfaces/index"],
+      "@providers": ["./src/models/providers/index"],
+      "@usecases": ["./src/models/usecases/index"],
+      "@composed/*": ["./src/presenters/components/composed/*"],
+      "@ui/*": ["./src/presenters/components/ui/*"],
+      "@contexts/*": ["./src/presenters/contexts/*"],
+      "@hooks/*": ["./src/presenters/hooks/*"],
+      "@layouts/*": ["./src/presenters/layouts/*"],
+      "@middlewares/*": ["./src/presenters/middlewares/*"],
+      "@pages/*": ["./src/presenters/pages/*"],
+      "@utils": ["./src/utils/index"]
+    }
+  },
+  "include": ["vite.config.ts"]
 }
