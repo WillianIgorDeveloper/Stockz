@@ -1,7 +1,13 @@
+import { Header } from "./header"
+import { Hero } from "./hero"
+
 export function IndexPage() {
   return (
     <div>
-      <h1>Index Page</h1>
+      <Header />
+      <main>
+        <Hero />
+      </main>
     </div>
   )
 }
