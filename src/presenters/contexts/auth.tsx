@@ -11,6 +11,7 @@ interface IAuthContext {
   hasSession: boolean
   token: string | undefined
   user: User | null
+  permissions: string[]
   // Functions
   handleLogin: (params: { login: string; password: string }) => Promise<void>
   handleLogout: () => Promise<void>
@@ -22,6 +23,7 @@ export function AuthProvider() {
   const [hasSession, setHasSession] = useState<boolean>(false)
   const [token, setToken] = useState<string | undefined>(undefined)
   const [user, setUser] = useState<User | null>(null)
+  const [permissions, setPermissions] = useState<string[]>([])
 
   async function handleLogin(params: { login: string; password: string }) {
     try {
@@ -78,6 +80,7 @@ export function AuthProvider() {
         handleLogin,
         handleLogout,
         user,
+        permissions,
       }}
     >
       <Outlet />

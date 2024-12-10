@@ -10,8 +10,7 @@
     "lint": "npx @biomejs/biome check --write ./src",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "commit": "git add . && git commit",
-    "prepare": "husky"
+    "commit": "git add . && git commit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -23,10 +22,13 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.13.1",
+    "i18next": "^24.0.5",
+    "i18next-browser-languagedetector": "^8.0.2",
     "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.54.0",
+    "react-i18next": "^15.1.4",
     "react-router-dom": "^7.0.2",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",

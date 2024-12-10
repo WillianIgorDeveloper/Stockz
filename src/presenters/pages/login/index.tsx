@@ -1,13 +1,13 @@
+import { zodResolver } from "@hookform/resolvers/zod"
 import { Button } from "@ui/button"
 import { Form, FormControl, FormField } from "@ui/form"
 import { FormItem, FormLabel, FormMessage } from "@ui/form"
 import { Input } from "@ui/input"
-import { zodResolver } from "@hookform/resolvers/zod"
+import { Logo } from "@ui/logo"
+import { Separator } from "@ui/separator"
 import { useForm } from "react-hook-form"
 import type { z } from "zod"
 import { loginSchema } from "./schema"
-import { Logo } from "@ui/logo"
-import { Separator } from "@ui/separator"
 
 export function LoginPage() {
   const form = useForm<z.infer<typeof loginSchema>>({
