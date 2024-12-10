@@ -1,8 +1,8 @@
 "use client"
 
-import React from "react"
-import { motion, type AnimationProps, type HTMLMotionProps } from "framer-motion"
 import { cn } from "@utils"
+import { type AnimationProps, type HTMLMotionProps, motion } from "framer-motion"
+import React from "react"
 
 const animationProps = {
   initial: { "--x": "100%", scale: 0.8 },

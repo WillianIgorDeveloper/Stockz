@@ -21,7 +21,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 142.1 76.2% 36.3%;
+    --ring: 175 77% 26%;
     --radius: 0.75rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -37,7 +37,7 @@
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
-    --primary: 175 84% 32%;
+    --primary: 175 77% 26%;
     --primary-foreground: 144.9 80.4% 10%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -59,19 +59,19 @@
 }
 
 @font-face {
-  font-family: 'Switzer-Variable';
-  src: url('/fonts/Switzer-Variable.woff2') format('woff2'),
-       url('/fonts/Switzer-Variable.woff') format('woff'),
-       url('/fonts/Switzer-Variable.ttf') format('truetype');
+  font-family: "Switzer-Variable";
+  src: url("/fonts/Switzer-Variable.woff2") format("woff2"),
+    url("/fonts/Switzer-Variable.woff") format("woff"), url("/fonts/Switzer-Variable.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Switzer-VariableItalic';
-  src: url('/fonts/Switzer-VariableItalic.woff2') format('woff2'),
-       url('/fonts/Switzer-VariableItalic.woff') format('woff'),
-       url('/fonts/Switzer-VariableItalic.ttf') format('truetype');
+  font-family: "Switzer-VariableItalic";
+  src: url("/fonts/Switzer-VariableItalic.woff2") format("woff2"),
+    url("/fonts/Switzer-VariableItalic.woff") format("woff"),
+    url("/fonts/Switzer-VariableItalic.ttf") format("truetype");
   font-weight: 100 900;
   font-display: swap;
   font-style: italic;

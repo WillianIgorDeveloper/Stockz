@@ -1,17 +1,17 @@
-import { useId } from "react";
+import { useId } from "react"
 
-import { cn } from "@utils";
+import { cn } from "@utils"
 
 interface DotPatternProps {
-  width?: any;
-  height?: any;
-  x?: any;
-  y?: any;
-  cx?: any;
-  cy?: any;
-  cr?: any;
-  className?: string;
-  [key: string]: any;
+  width?: any
+  height?: any
+  x?: any
+  y?: any
+  cx?: any
+  cy?: any
+  cr?: any
+  className?: string
+  [key: string]: any
 }
 export function DotPattern({
   width = 16,
@@ -24,7 +24,7 @@ export function DotPattern({
   className,
   ...props
 }: DotPatternProps) {
-  const id = useId();
+  const id = useId()
 
   return (
     <svg
@@ -50,7 +50,7 @@ export function DotPattern({
       </defs>
       <rect width="100%" height="100%" strokeWidth={0} fill={`url(#${id})`} />
     </svg>
-  );
+  )
 }
 
-export default DotPattern;
+export default DotPattern
